@@ -27,13 +27,13 @@
  */
 
 /** XMPPHP_Exception */
-require_once 'XMPPHP/Exception.php';
+require_once 'Exception.php';
 
 /** XMPPHP_XMLObj */
-require_once 'XMPPHP/XMLObj.php';
+require_once 'XMLObj.php';
 
 /** XMPPHP_Log */
-require_once 'XMPPHP/Log.php';
+require_once 'Log.php';
 
 /**
  * XMPPHP XML Stream
@@ -362,7 +362,7 @@ class XMPPHP_XMLStream {
 		$this->reconnect = false;
 		$this->send($this->stream_end);
 		$this->sent_disconnect = true;
-		$this->processUntil('end_stream', 5);
+		//$this->processUntil('end_stream', 5);
 		$this->disconnected = true;
 	}
 

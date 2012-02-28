@@ -38,7 +38,7 @@
  * @version	$Id$
  */
 
-class Roster {
+class XMPHP_Roster {
 	/**
 	 * Roster array, handles contacts and presence.  Indexed by jid.
 	 * Contains array with potentially two indexes 'contact' and 'presence'

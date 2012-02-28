@@ -27,8 +27,8 @@
  */
 
 /** XMPPHP_XMLStream */
-require_once 'XMPPHP/XMLStream.php';
-require_once 'XMPPHP/Roster.php';
+require_once 'XMLStream.php';
+require_once 'Roster.php';
 
 /**
  * XMPPHP Main Class
@@ -135,7 +135,7 @@ class XMPPHP_XMPP extends XMPPHP_XMLStream {
 		$this->server = $server;
 		$this->basejid = $this->user . '@' . $this->host;
 
-		$this->roster = new Roster();
+		$this->roster = new XMPHP_Roster();
 		$this->track_presence = true;
 
 		$this->stream_start = '<stream:stream to="' . $server . '" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" version="1.0">';
